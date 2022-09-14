@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+:root{
+    --font-text: 13px;
+    --weight-500: 500;
+    --weight-700: 700;
+    --Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.card{
+    position: relative;
+    left: 50%;
+    margin-left: -325px;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    height: 250px;
+}
+
+.img-card{
+    height: 100%;
+    width: 240px;
+    border-radius: 20px 0 0 20px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 0 20px 20px 0;
+}
+
+.title{
+    font-weight: var(--weight-700);
+    color: var(--Dark-Grayish-Blue);
+}
+
+.content{
+    font-weight: var(--weight-500);
+    font-size: var(--font-text);
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.info-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.group-user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.data-user{
+    font-size: var(--font-text);
+}
+
+.name-user{
+    font-weight: var(--weight-700);
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 5px;
+}
+
+.date{
+    margin-top: 5px;
+    font-weight: var(--weight-500);
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.social-red{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social-red p{
+    font-weight: var(--weight-500);
+    color: var(--Grayish-Blue);
+}
+
+.social-red img{
+    width: 24px;
+    height: 24px;
+}
+
+.share-tooltip{
+    display: none;
+}
+
+.tooltip-activate{
+    position: absolute;
+    bottom: 90px;
+    background-color: var(--Dark-Grayish-Blue);
+    color: white;
+    width: 180px;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+
+.tooltip-activate:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: var(--Dark-Grayish-Blue);
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    
+}
